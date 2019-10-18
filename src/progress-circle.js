@@ -17,7 +17,7 @@ class ProgressCircle extends PureComponent {
                 layout: { height, width },
             },
         } = event
-        this.setState({ height, width })
+        this.setState({ height: Math.ceil(height), width: Math.ceil(width) });
     }
 
     render() {
